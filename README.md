@@ -1,5 +1,5 @@
 # PRO_Packet_Inspector
-A simple function hooker which will print out all the on going packets of PRO Client. And only works with 32 Bit version of PRO.
+A simple function hooker which will print out all the on going packets of PRO Client. And only works with 32 Bit version of PRO. You'll need to find the function offsets by yourself of the 64 Bit version.
 
 # Build
 Visual Studio 2017 is enough to build this. (Make sure you got all the SDKs)
