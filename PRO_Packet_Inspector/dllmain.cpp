@@ -23,14 +23,10 @@ void MAIN(LPVOID hModule)
 	AllocConsole();
 	freopen_s((FILE**)stdout, "CONOUT$", "w", stdout);
 	clear();
-#ifdef _DEBUG
-	std::cout << "DEBUG: YES" << std::endl;
-#else
-	std::cout << "DEBUG: NO" << std::endl;
-#endif
+	std::cout << "~~~~~~~~~~PRO Packet Inspector~~~~~~~~~~" << std::endl;
 	while (true)
 	{
-		if (GetKeyState(VK_SHIFT) & 0x8000)
+		if (GetKeyState(VK_CONTROL) & 0x8000)
 		{
 			/* clears the console if shift key is pressed */
 			clear();
